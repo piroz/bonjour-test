@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bonjour": "^3.5.0",
+    "node-config": "0.0.2"
+  }
+}
