@@ -1,0 +1,16 @@
+{
+    "publishto": [
+        {
+            "name": "my service 1",
+            "host": "service1.myservice.local",
+            "type": "http",
+            "port": 80
+        },
+        {
+            "name": "my service 2",
+            "host": "service2.myservice.local",
+            "type": "http",
+            "port": 80
+        }
+    ]
+}
