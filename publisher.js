@@ -2,8 +2,19 @@
 
 var bonjour = require("bonjour")();
 
-var BonjourPublisher = {
-    publish: function(configs) {
+/**
+ * BonjourPublisher
+ * 
+ * @class BonjourPublisher
+ */
+class BonjourPublisher {
+    /**
+     * start bonjour announcement
+     * 
+     * @static
+     * @param {any} configs
+     */
+    static publish(configs) {
         var config;
 
         for (var i in configs) {
@@ -13,6 +24,6 @@ var BonjourPublisher = {
             bonjour.publish(config);
         }
     }
-};
+}
 
 module.exports = BonjourPublisher;
