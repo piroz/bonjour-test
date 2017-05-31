@@ -3,7 +3,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "make:plist": "node plist.js",
+    "load": "npm run make:plist && node load.js",
+    "unload": "node load.js --unload"
   },
   "dependencies": {
     "bonjour": "^3.5.0",
