@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "bonjour": "^3.5.0",
-    "config": "^1.21.0"
+    "config": "^1.21.0",
+    "fs-extra": "^3.0.1",
+    "plist": "^2.1.0"
   }
 }
