@@ -4,6 +4,11 @@ const fs = require("fs-extra");
 var plist_path = __dirname + "/me.muraka.bonjour-test.plist";
 var home_plist_path = process.env.HOME + "/Library/LaunchAgents/me.muraka.bonjour-test.plist";
 
+if (process.env.TMUX) {
+   throw Error("please exit tmux");
+}
+
+
 switch (process.argv[2]) {
     case '--unload':
         console.log("unload");
